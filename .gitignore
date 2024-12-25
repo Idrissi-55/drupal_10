@@ -1,0 +1,50 @@
+# Ignore the vendor directory (Composer dependencies)
+vendor/
+
+# Ignore the core directory (if not versioning Drupal sources)
+web/core/
+
+# Ignore contributed modules and themes
+web/modules/contrib/
+web/themes/contrib/
+
+# Ignore the sites directory files that contain sensitive information
+web/sites/*/settings.php
+web/sites/*/settings.local.php
+web/sites/*/services.yml
+web/sites/*/development.services.yml
+
+# Ignore user-generated content directories
+web/sites/*/files/
+web/sites/*/private/
+web/sites/*/files-private/
+
+# Ignore temporary files and caches
+cache/
+tmp/
+logs/
+
+# Ignore default text files and documentation
+CHANGELOG.txt
+COPYRIGHT.txt
+INSTALL*.txt
+LICENSE.txt
+MAINTAINERS.txt
+UPGRADE.txt
+README.txt
+
+# Ignore IDE-specific files (e.g., for PHPStorm or VSCode)
+.idea/
+.vscode/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore other common temporary files
+*.log
+*.cache
+*.tmp
+
+# Ignore any other sensitive or environment-specific files
+.env
