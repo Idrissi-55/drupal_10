@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  drupal:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./drupal:/var/www/html
+    depends_on:
+      - database
+
+  database:
+    image: mariadb:10.5
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - ./mariadb-data:/var/lib/mysql
+
+volumes:
+  mariadb-data:
