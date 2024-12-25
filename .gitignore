@@ -4,6 +4,8 @@ vendor/
 # Ignore the core directory (if not versioning Drupal sources)
 web/core/
 
+core/
+
 # Ignore contributed modules and themes
 web/modules/contrib/
 web/themes/contrib/
