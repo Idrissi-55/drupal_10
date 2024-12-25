@@ -6,6 +6,20 @@ web/core/
 
 core/
 
+modules/contrib/
+themes/contrib/
+
+# Ignore the sites directory files that contain sensitive information
+sites/*/settings.php
+sites/*/settings.local.php
+sites/*/services.yml
+sites/*/development.services.yml
+
+# Ignore user-generated content directories
+sites/*/files/
+sites/*/private/
+sites/*/files-private/
+
 # Ignore contributed modules and themes
 web/modules/contrib/
 web/themes/contrib/
